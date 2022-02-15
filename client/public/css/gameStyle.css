@@ -1,0 +1,85 @@
+body{
+    background-color: #9C835F;
+}
+
+.playerInput{
+    border-radius: 1rem;
+    cursor: pointer;
+    display: block;
+    
+}
+
+.comOutput{
+    border-radius: 1rem;
+    display: block;
+}
+
+.status{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7rem;
+    color: #BD0000;
+    font-weight: 600;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.rectangle {
+    height: 9rem;
+    width: 15rem;
+    background-color: #4C9654;
+    border-radius: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    color: white;
+    transform: rotate(-23deg);
+}
+
+@media (max-width: 768px) {
+    
+
+    .playerInput{
+        width: 8rem;
+        display: inline-block;
+        align-self: center;
+    }
+
+    #player_batu{
+        margin-right: 6%;
+    }
+
+    #player_kertas{
+        margin-right: 5%;
+    }
+
+    #player_gunting{
+        margin-right: auto;
+    }
+
+    .comOutput{
+        display: inline-block;
+        width: 8rem;
+    }
+
+    #com_batu{
+        margin-left: auto;
+    }
+
+    #com_kertas{
+        margin-left: 6%;
+    }
+
+    #com_gunting{
+        margin-left: 5%;
+    }
+
+    .status{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 6rem;
+    }
+
+    .rectangle{
+        font-size: 2.6rem;
+    }
+}

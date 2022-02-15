@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include ('partial/head') %> 
+	<body style="background-color: #1b1b1b;">
+		<!-- Start Navbar -->
+		<%- include ('partial/navbar') %>
+		<!-- End Navbar -->
+		
+		<!-- Start Main -->
+		<section class="main ">
+			<div class="container">
+				<h1 class="mt-5 user__main-title text-white">Log In</h1>
+				<main class="form-signin">
+					<form action="/login" method="POST">
+						<div class="form-floating">
+							<label for="floatingInput" class="mt-2 text-white">Email address</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" />
+						</div>
+						<div class="form-floating">
+							<label for="floatingPassword" class="mt-2 text-white">Password</label>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+						</div>
+						<div class="button-group mt-3">
+							<button href='home' class="btn btn-submit mb-2 mt-2 text-center">Login</button>
+							<a href="home" class="btn btn-back mb-2 mt-2 text-center">Back</a>
+						</div>
+					</form>
+				</main>
+			</div>
+		</section>
+
+	</body>
+</html>
